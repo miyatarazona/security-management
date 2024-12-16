@@ -48,7 +48,7 @@ fetch('qa.csv')
 function initQuiz() {
   appContainer.innerHTML = `
     <div class="card shadow-sm p-4 text-center" style="width: 1000px;">
-      <h1 class="card-title mb-4">アクセシビリティテスト</h1>
+      <h1 class="card-title mb-4">情報セキュリティマネジメント試験 英語略語テスト</h1>
       <button class="btn btn-primary btn-lg" id="start-btn" style="width: 60%; display: block; margin: 0 auto;">テストを開始</button>
     </div>
   `;
@@ -63,7 +63,7 @@ function displayQuestion(index) {
   const question = questions[index];
   appContainer.innerHTML = `
     <div class="card shadow-sm p-4" style="width: 1000px;">
-      <h1 class="card-title text-center mb-4">アクセシビリティテスト</h1>
+      <h1 class="card-title text-center mb-4">情報セキュリティマネジメント試験 英語略語テスト</h1>
       <div id="question-text" class="question-text h5 mb-4">
         ${index + 1}. ${question.question} <!-- 問題番号を追加 -->
       </div>
@@ -161,7 +161,7 @@ function displayResults() {
       </table>
       <div class="text-center mt-4">
         <button class="btn btn-success" onclick="downloadExcel()">結果をExcelでダウンロード</button>
-        <button class="btn btn-info" onclick="window.open('https://gamma.app/docs/20241128-k17stcspmveco96', '_blank')">回答の解説はこちら</button>
+        <button class="btn btn-info" onclick="window.open('https://mango-vermicelli-0e5.notion.site/15cdf2466f71806fbf32fd7b2a328aa0', '_blank')">英語略語まとめはこちら</button>
       </div>
     </div>
   `;
